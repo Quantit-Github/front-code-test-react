@@ -1,0 +1,31 @@
+stages:
+  - build
+  - deploy
+
+# Job 정의
+build:
+  image: node:16.13.2
+  stage: build
+  only:
+    - master
+  script:
+    - yarn global add dotenv-cli sass
+    - yarn
+    - yarn test
+    - yarn build
+  artifacts:    
+    paths:           
+      - build/    
+    expire_in: 1 hour
+
+deploy:
+  image:
+    name: amazon/aws-cli:2.2.38
+    entrypoint: [""]
+  stage: deploy 
+  only:
+    - master
+  script:
+    - aws --version
+    - aws s3 sync ./build s3://quantit-code-test --delete
+    - aws cloudfront create-invalidation --distribution-id E1OAEQ9Z0KRRSA --paths '/*'

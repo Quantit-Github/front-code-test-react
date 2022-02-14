@@ -1,0 +1,167 @@
+#page > main{min-height: calc(100vh - 158px); width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+#dashboard > main{min-height: 100vh; width: 100%; display: flex; flex-direction: row; justify-content: flex-start; align-items: center;}
+#dashboard > main > div.content{padding: 30px 40px; min-height: calc(100vh - 60px); width: calc(100vw - 232px); margin-left: 232px; display: flex;  flex-direction: column; justify-content: flex-start; align-items: flex-start;}
+#dashboard > main > div.content > div.dashboard-body * {box-sizing: border-box}
+#dashboard > main > div.content > div.dashboard-body > * > * {box-shadow: 0px 10px 25px rgba(29, 52, 54, 0.08); border-radius: 10px;}
+#dashboard > main > div.content > div.dashboard-body .task-category.home {background-color: #F05454;}
+#dashboard > main > div.content > div.dashboard-body .task-category.sport {background-color: #A6CEE3;}
+#dashboard > main > div.content > div.dashboard-body .task-category.family {background-color: #00AF91;}
+#dashboard > main > div.content > div.dashboard-body .task-category.work {background-color: #1976D2;}
+#dashboard > main > div.content > div.dashboard-body .task {border: 1px solid rgba(40, 40, 70, 0.1); border-radius: 10px;}
+#dashboard > main > div.content > div.dashboard-body .task:hover {background: rgba(41, 161, 156, 0.02);}
+header{ height: 94px; padding: 0px 20px; display: flex; flex-direction: row; justify-content: flex-start; align-items: center;}
+
+#logoBox {display: flex; flex-direction: row; justify-content: center;  align-items: center;}
+#logoBox > div.name{ padding-left: 10px; display: flex; flex-direction: column; justify-content: center; }
+#logoBox > div.name > span{ font-weight:600; font-size: 18px; color: #29A19C;}
+
+#logo{height: 54px;}
+
+footer { height: 64px; display: flex; flex-direction: row; justify-content: center; align-items: center;}
+footer > span { font-weight:400; font-size: 14px; color: #9D9D9D;}
+
+nav {position: fixed; top:0; height: 100%; width: 232px; display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; box-shadow: 0px 10px 25px rgba(29, 52, 54, 0.08);}
+nav > div.menu-box{width: 100%; padding-top: 20px;}
+nav > div.menu-box > ul {padding: 0px; width: 100%;  margin-bottom: 60px; }
+nav > div.menu-box > ul > div {color: #29A19C; font-size: 24px; font-weight: 600; margin-left: 20px; padding-bottom: 20px;}
+nav > div.menu-box > ul > li{padding-left:20px; display: flex; flex-direction: row; justify-content: flex-start; align-items: center; position: relative; width: 100%; font-size: 16px; font-weight: normal; color: #282846; margin-bottom: 9px;}
+nav > div.menu-box > ul > li.menu-item{cursor: pointer; padding: 9px 20px;}
+nav > div.menu-box > ul > li.category{padding: 9px 20px;}
+nav > div.menu-box > ul > li.menu-item:hover {background-color: rgba(41, 161, 156, 0.3);}
+nav > div.menu-box > ul > li:last-child{margin-bottom: 0px;}
+nav > div.menu-box > ul > li > svg{margin-right: 10px; color: #282846; font-weight:"normal"}
+nav > div.menu-box > ul > li > div.dot{height:16px; width:16px; margin-right: 20px; border-radius: 50%;}
+nav > div.menu-box > ul > button{padding: 9px 20px; color: #29A19C; display: flex; flex-direction: row; justify-content: flex-start; align-items: center; width: 100%;}
+nav > div.menu-box > ul > button:hover{background-color: rgba(41, 161, 156, 0.3);}
+nav > div.menu-box > ul > button > svg{margin-right: 10px;}
+nav > button{width: 100%; padding: 20px 20px; display: flex; flex-direction: row; justify-content: flex-start; align-items: center; color: #282846;}
+nav > button:hover{background-color: rgba(40, 40, 70, 0.3);}
+nav > button > svg{height:18px !important; width: 18px !important; margin-right: 10px;}
+
+#notfound {display: flex; flex-direction: column; justify-content: center; align-items: center;}
+#notfound > img {max-width: 500px; width: 50vw;}
+#notfound > h1 {font-size: 42px; color: #28464D; width: 80vw; text-align: center;}
+#notfound > p {font-size: 24px; color: #436972; width: 80vw; text-align: center;}
+
+#notfound > button {height: 90px; width: 240px;border: none; background-color: transparent;  position: relative; transition: all 0.2s ease; display: flex; flex-direction: row; justify-content: center; align-items: center;}
+#notfound > button:before {content: "";position: absolute;top: 25px; right: 0;display: block;border-radius: 20px;background: rgba(41, 161, 156, 0.5);width: 40px;height: 40px;transition: all 0.3s ease;}
+#notfound > button:hover:before {width: 100%;background: rgba(41, 161, 156, 1);}
+#notfound > button > span {  position: relative;font-size: 16px;line-height: 18px;font-weight: 900;letter-spacing: 0.25em;text-transform: uppercase;vertical-align: middle;}
+#notfound > button:active {transform: scale(0.96);}
+
+#login{padding: 20px; height: 350px; width: 375px; display: flex; flex-direction: column; justify-content: space-between; align-items: center; box-shadow: 0px 10px 25px rgba(29, 52, 54, 0.08);}
+#login > span.title {color: #29A19C; font-weight: 600; font-size: 18px;}
+#login > div.panel{width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+#login > div.panel > form{width: 100%; display: flex; flex-direction: column; justify-content: space-between; align-items: center;}
+#login > div.panel > form > input {margin-bottom: 20px; height: 39px; border: 1px solid rgba(40, 40, 70, 0.1); border-radius: 8px; padding: 10px 15px;}
+#login > div.panel > form > input:focus {border:1px solid #29A19C; outline: none !important;}
+#login > div.panel > button{padding: 10px 25px; border-radius: 8px; background: #CECECE; color: black; font-size: 16px; font-weight: 600; margin-bottom: 20px;}
+#login > div.panel > button.active{background: #29A19C; color: white;}
+#login > div.panel > span{font-size: 12px;}
+#login > div.panel > div.sns{display: flex; flex-direction: row; justify-content: center; align-items: center;}
+
+main > div.content > header {height: 44px; justify-content: space-between; padding: 0px; width: 100%; margin-bottom: 30px;}
+main > div.content > header > button{height: 42px; padding: 10px 25px;background: #29A19C; border-radius: 8px; display: flex; flex-direction: row; justify-content: space-between; align-items: center;}
+main > div.content > header > button > svg {color: white;}
+main > div.content > header > button > span{margin-left: 10px; color: white; font-size: 16px; font-weight: 600;}
+main > div.content > header > button:hover{background: rgba(41, 161, 156, 0.3);}
+main > div.content > header > button:hover > svg {color: rgba(41, 161, 156, 1);}
+main > div.content > header > button:hover > span{color: rgba(41, 161, 156, 1);}
+main > div.content > header > div.profile{display: flex; flex-direction: row; align-items: center;}
+main > div.content > header > div.profile > span{color: rgba(40, 40, 70, 1);font-size: 16px;font-style: normal;font-weight: 600;line-height: 22px;letter-spacing: 0em;text-align: left; margin-right: 10px;}
+main > div.content > header > div.profile > svg{ height: 44px; width: 44px; color: rgba(223, 224, 235, 1);}
+
+div.ReactModalPortal > div.overlay {position: fixed;inset: 0px; background-color: rgba(223, 223, 223, 0.5); display: flex; flex-direction: column; justify-content: center; align-items: center;}
+
+#task-modal{position: relative; inset: 40px;background: rgb(255, 255, 255);overflow: auto;border-radius: 10px;outline: none;padding: 20px; min-width: 700px;display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.08);}
+#task-modal > h4 {color: rgba(41, 161, 156, 1);font-size: 20px; font-style: normal; font-weight: 700; line-height: 27px; letter-spacing: 0.02em; text-align: left; margin: 0px; margin-bottom: 30px;}
+#task-modal span {color: rgba(40, 40, 70, 1); font-size: 14px; font-style: normal; font-weight: 700; line-height: 19px; letter-spacing: 0.02em; text-align: left; margin-bottom: 10px;}
+#task-modal > form.todo-input{display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; width: 100%; margin-bottom: 30px;}
+#task-modal .input-field{border: 1px solid rgba(40, 40, 70, 0.1); height: 35px; width: 100%;border-radius: 8px; padding: 15px;}
+#task-modal input:focus {border:1px solid #29A19C; outline: none !important;}
+#task-modal > div.todo-info{display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; width: 100%; margin-bottom: 50px;}
+#task-modal > div.todo-info > div{margin: 0px 15px; flex: 1; display:flex; flex-direction:column; }
+#task-modal > div.todo-info > div:first-child{margin-left: 0px;}
+#task-modal > div.todo-info > div:last-child{margin-right: 0px;}
+#task-modal > div.todo-info select {width: 200px; height: 35px; border: 1px solid rgba(40, 40, 70, 0.1); border-radius: 8px; padding: 5px;}
+#task-modal select:focus {outline: none !important;}
+#task-modal > div.todo-info > div.due-date > div.react-datepicker-wrapper input {border: 1px solid rgba(40, 40, 70, 0.1); height: 35px; width: 100%;border-radius: 8px; padding: 0px 15px}
+#task-modal > div.todo-info > div.due-date > div.react-datepicker__tab-loop{position: fixed;}
+#task-modal > div.todo-info > div.due-date > div.react-datepicker__tab-loop > div.react-datepicker-popper{position:unset !important; inset:unset !important; transform: translate(0px, 70px);}
+#task-modal > div.todo-buttons{display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; width: 100%;}
+#task-modal > div.todo-buttons button{padding: 10px 25px; border-radius: 8px; color: white; font-size: 16px; line-height: 21.82px;}
+#task-modal > div.todo-buttons button:first-child{background: #F05454;}
+#task-modal > div.todo-buttons button:first-child:hover{background: rgba(240,84,84, 0.7);}
+#task-modal > div.todo-buttons button:last-child{background: #29A19C;}
+#task-modal > div.todo-buttons button:last-child:hover{background: rgba(41,161,156, 0.7);}
+
+#add-category-modal{position: relative; inset: 40px;background: rgb(255, 255, 255);overflow: auto;border-radius: 10px;outline: none;padding: 20px; min-width: 464px;display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.08);}
+#add-category-modal > h4 {color: rgba(41, 161, 156, 1);font-size: 20px; font-style: normal; font-weight: 700; line-height: 27px; letter-spacing: 0.02em; text-align: left; margin: 0px; margin-bottom: 30px;}
+#add-category-modal span {color: rgba(40, 40, 70, 1); font-size: 14px; font-style: normal; font-weight: 700; line-height: 19px; letter-spacing: 0.02em; text-align: left; margin-bottom: 10px;}
+#add-category-modal > form.category-input{display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; margin-bottom: 30px; width: 100%; gap: 32px}
+#add-category-modal > form.category-input > div.name {display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; flex: 1;}
+#add-category-modal > form.category-input > div.name > input{flex: 1; padding: 8px 15px; height: 35px;border: 1px solid rgba(40, 40, 70, 0.1); width: 100%;border-radius: 8px;}
+#add-category-modal > form.category-input > div.color {display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;}
+#add-category-modal input:focus {border:1px solid #29A19C; outline: none !important;}
+#add-category-modal > div.category-buttons{display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; width: 100%;}
+#add-category-modal > div.category-buttons button{padding: 10px 25px; border-radius: 8px; color: white; font-size: 16px; line-height: 21.82px;}
+#add-category-modal > div.category-buttons button:first-child{background: #F05454;}
+#add-category-modal > div.category-buttons button:last-child{background: #29A19C;}
+
+main > div.content > article.dashboard{display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; width: 100% ;height: inherit; flex: 1;}
+main > div.content > article.dashboard > div.column{display: flex; flex-direction: column; justify-content: space-between; align-items: center;}
+main > div.content > article.dashboard > div.column:first-child{flex: 1.3; margin-right: 30px;}
+main > div.content > article.dashboard > div.column:last-child{flex: 1;}
+main > div.content > article.dashboard > div.column > section {box-shadow: 0px 10px 25px 0px rgba(29, 52, 54, 0.08);border-radius: 10px; width: 100%;  -webkit-box-sizing: border-box;-moz-box-sizing: border-box;-o-box-sizing: border-box;-ms-box-sizing: border-box;box-sizing: border-box;display: flex;flex-direction: column;align-items: flex-start;padding: 20px; margin-bottom: 30px;}
+main > div.content > article.dashboard > div.column > section:last-child{margin-bottom: 0px;}
+main > div.content > article.dashboard > div.column > section > h4{color: rgba(41, 161, 156, 1);font-size: 18px;font-style: normal;font-weight: 600;line-height: 25px;letter-spacing: 0.02em;text-align: left; margin: 0px; margin-bottom: 20px;}
+
+#summery > div.content{display: flex;flex-direction: row; justify-content: space-between; width: 100%;}
+#summery > div.content > div.stat{display: flex;flex-direction: column;align-items: center;}
+#summery > div.content > div.stat > h3{color: rgba(40, 40, 70, 1);font-size: 12px;font-style: normal;font-weight: 600;line-height: 16px;letter-spacing: 0.02em;text-align: left; margin: 0px;}
+#summery > div.content > div.stat > div.circle{display: flex;flex-direction: column;justify-content: center;align-items: center;width: 100px;height: 100px;border: 1px solid #29A19C;box-sizing: border-box;border-radius: 50%;flex: none;order: 1;flex-grow: 0;margin: 10px 0px;}
+#summery > div.content > div.stat > div.circle > h1 {color: rgba(41, 161, 156, 1);font-size: 36px;font-style: normal;font-weight: 600;line-height: 49px;letter-spacing: 0.02em;text-align: left;margin: 0px;}
+#summery > div.content > div.stat > div.circle > span{color: rgba(40, 40, 70, 1);font-size: 12px;font-style: normal;font-weight: 400;line-height: 16px;letter-spacing: 0.02em;text-align: left;}
+
+
+#task-summery > ul{margin: 0px; padding: 0px;width: 100%; margin-bottom: 20px;}
+
+#cur-time > div.datetime-box{display: flex;flex-direction: row;justify-content: space-between; width: 100%;}
+#cur-time > div.datetime-box > div{flex: 1;}
+#cur-time > div.datetime-box > div > h5{margin: 0px;margin-bottom: 5px;font-size: 14px;font-style: normal;font-weight: 400;line-height: 19px;letter-spacing: 0.02em;text-align: left;}
+#cur-time > div.datetime-box > div > div{display: flex;flex-direction: row;justify-content: flex-start; align-items: center; width: 100%;}
+#cur-time > div.datetime-box > div > div > svg{margin-right: 10px;}
+#cur-time > div.datetime-box > div > div > span{font-size: 25px;font-style: normal;font-weight: 600;line-height: 34px;letter-spacing: 0.02em;text-align: left;color: rgba(40, 40, 70, 1);}
+
+#observation > p{margin: 0px;margin-bottom: 10px;font-size: 14px;font-style: normal;font-weight: 400;line-height: 19px;letter-spacing: 0.02em;text-align: left;}
+#observation > p:last-child{margin-bottom: 0px;}
+#observation > p > span.action{font-size: 14px;font-style: normal;font-weight: 400;line-height: 17px;letter-spacing: 0.02em;text-align: left; color: rgba(41, 161, 156, 1);text-decoration: underline;}
+#observation > p > span.day{font-size: 14px;font-style: normal;font-weight: 600;line-height: 19px;letter-spacing: 0.02em;text-align: left;}
+
+#aphorism > p{margin: 0px;font-size: 14px;font-style: normal;font-weight: 400;line-height: 21px;letter-spacing: 0.02em;text-align: left;color: rgba(40, 40, 70, 1);}
+
+main > div.content > article.todo{display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; width: 100% ;height: inherit; flex: 1;}
+main > div.content > article.todo > section{flex: 1; box-shadow: 0px 10px 25px 0px rgba(29, 52, 54, 0.08);padding: 20px;border-radius: 10px; min-height: 100%;display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;}
+main > div.content > article.todo > section:first-child{margin-right: 30px;}
+main > div.content > article.todo > section > h3{margin: 0px 0px 20px 0px;color: rgba(41, 161, 156, 1);font-size: 18px;font-style: normal;font-weight: 600;line-height: 25px;letter-spacing: 0.02em;text-align: left;}
+main > div.content > article.todo > section > ul{margin: 0px; padding: 0px;width: 100%;}
+
+main > div.content > article.todo > section > div.pagenation{flex: 1; margin-top: 70px; display: flex; flex-direction: row; justify-content:center; align-items: center; width: 100%;}
+main > div.content > article.todo > section > div.pagenation > button{height: 32px;width: 32px;border-radius: 4px;border: 1px solid rgba(223, 227, 232, 1); padding: 0px;display: flex; flex-direction: row; justify-content:center; align-items: center; margin-right: 8px;}
+main > div.content > article.todo > section > div.pagenation > button:last-child{margin-right: 0px;}
+main > div.content > article.todo > section > div.pagenation > button:hover{background: rgba(196, 205, 213, 0.3);}
+main > div.content > article.todo > section > div.pagenation > button > span{font-size: 14px;font-style: normal;font-weight: 700;line-height: 19px;letter-spacing: 0em;text-align: center;color: rgba(40, 40, 70, 1);}
+main > div.content > article.todo > section > div.pagenation > button.cur-page{border: 1px solid #29A19C;}
+main > div.content > article.todo > section > div.pagenation > button.cur-page > span{color: rgba(41, 161, 156, 1);}
+main > div.content > article.todo > section > div.pagenation > button > svg{color: rgba(196, 205, 213, 1);}
+main > div.content > article.todo > section > div.pagenation > button:disabled{background: rgba(196, 205, 213, 1);}
+main > div.content > article.todo > section > div.pagenation > button:disabled > svg{color: rgba(240, 240, 240, 1);}
+
+#category-color-btn{height: 35px; width: 35px; border-radius: 5px; padding: auto;box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.08); border: 1px solid rgba(0, 0, 0, 0.08);}
+#category-color-btn:hover {box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);}
+#category-color-btn:active {box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.15);}
+#color-palette{padding-bottom: 10px;background-color: white;border-radius: 10px;position: fixed;}
+#color-palette > div.info {margin-top: 10px; display: flex; flex-direction: column; justify-content:center; align-items: center; }
+#color-palette > div.info > form > input{flex: 1; padding: 8px 15px; height: 35px;border: 1px solid rgba(40, 40, 70, 0.1);border-radius: 8px;}
+#color-palette > div.info > div.btn-box{display: flex; flex-direction: row; justify-content:flex-end;width: 100%; margin-top: 10px;}
+#color-palette > div.info > div.btn-box > button{margin-right: 15px; padding: 5px 8px; border-radius: 8px; color: white; font-size: 12px; background: #29A19C;}
