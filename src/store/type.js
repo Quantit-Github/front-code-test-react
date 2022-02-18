@@ -4,6 +4,7 @@ const ActionTypes = {
 
     REFRESH_TOKEN: "REFRESH_TOKEN",
     LOGOUT: "LOGOUT",
+    LOGIN: "LOGIN",
 
     //  ============== 1. Common ==============  //
     GET_CATEGORIES: 'GET_CATEGORIES',

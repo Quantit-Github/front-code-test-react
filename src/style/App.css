@@ -57,8 +57,9 @@ nav > button > svg{height:18px !important; width: 18px !important; margin-right:
 #login > div.panel > form > input:focus {border:1px solid #29A19C; outline: none !important;}
 #login > div.panel > button{padding: 10px 25px; border-radius: 8px; background: #CECECE; color: black; font-size: 16px; font-weight: 600; margin-bottom: 20px;}
 #login > div.panel > button.active{background: #29A19C; color: white;}
+#login > div.panel > svg{width:inherit; height: inherit; margin: 20px 0;}
 #login > div.panel > span{font-size: 12px;}
-#login > div.panel > div.sns{display: flex; flex-direction: row; justify-content: center; align-items: center;}
+#login > div.panel > div.sns{width:84px; display: flex; flex-direction: row; justify-content: space-between; align-items: center;}
 
 main > div.content > header {height: 44px; justify-content: space-between; padding: 0px; width: 100%; margin-bottom: 30px;}
 main > div.content > header > button{height: 42px; padding: 10px 25px;background: #29A19C; border-radius: 8px; display: flex; flex-direction: row; justify-content: space-between; align-items: center;}
@@ -72,6 +73,7 @@ main > div.content > header > div.profile > span{color: rgba(40, 40, 70, 1);font
 main > div.content > header > div.profile > svg{ height: 44px; width: 44px; color: rgba(223, 224, 235, 1);}
 
 div.ReactModalPortal > div.overlay {position: fixed;inset: 0px; background-color: rgba(223, 223, 223, 0.5); display: flex; flex-direction: column; justify-content: center; align-items: center;}
+
 
 #task-modal{position: relative; inset: 40px;background: rgb(255, 255, 255);overflow: auto;border-radius: 10px;outline: none;padding: 20px; min-width: 700px;display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.08);}
 #task-modal > h4 {color: rgba(41, 161, 156, 1);font-size: 20px; font-style: normal; font-weight: 700; line-height: 27px; letter-spacing: 0.02em; text-align: left; margin: 0px; margin-bottom: 30px;}
@@ -145,6 +147,20 @@ main > div.content > article.todo > section{flex: 1; box-shadow: 0px 10px 25px 0
 main > div.content > article.todo > section:first-child{margin-right: 30px;}
 main > div.content > article.todo > section > h3{margin: 0px 0px 20px 0px;color: rgba(41, 161, 156, 1);font-size: 18px;font-style: normal;font-weight: 600;line-height: 25px;letter-spacing: 0.02em;text-align: left;}
 main > div.content > article.todo > section > ul{margin: 0px; padding: 0px;width: 100%;}
+main > div.content > article.todo > section > ul > li.task-row{ align-items: center; background: #fff; border: 1px solid rgba(40,40,70,.1); border-radius: 10px; box-sizing: border-box; display: flex; flex-direction: row; justify-content: space-between; margin-bottom: 10px; padding: 15px; width: 100%;}
+main > div.content > article.todo > section > ul > li.task-row > div.info{ align-items: center; display: flex; flex-direction: row; justify-content: flex-start;}
+main > div.content > article.todo > section > ul > li.task-row > div.info>span{height:20px; margin-right:10px}
+main > div.content > article.todo > section > ul > li.task-row > div.info > div.check-box{ align-items: center;appearance: none;-webkit-appearance: none;border: 1px solid #29a19c;border-radius: 4px;cursor: pointer;display: flex;height: 20px;justify-content: center;margin: 0 15px 0 0;outline: none; width: 20px; }
+main > div.content > article.todo > section > ul > li.task-row > div.info > div.category-box{ align-items: center;border-radius: 8px;flex-direction: row;height: 16px;justify-content: center;padding: 0 12px; }
+main > div.content > article.todo > section > ul > li.task-row > div.info > div.category-box>div{ color: #fff;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: .44px;
+  line-height: 16px;
+  text-align: center;}
+main > div.content > article.todo > section > ul > li.select{ background: rgba(41,161,156,.1);}
+main > div.content > article.todo > section > ul > li:hover{ background: rgba(41,161,156,.1);}
 
 main > div.content > article.todo > section > div.pagenation{flex: 1; margin-top: 70px; display: flex; flex-direction: row; justify-content:center; align-items: center; width: 100%;}
 main > div.content > article.todo > section > div.pagenation > button{height: 32px;width: 32px;border-radius: 4px;border: 1px solid rgba(223, 227, 232, 1); padding: 0px;display: flex; flex-direction: row; justify-content:center; align-items: center; margin-right: 8px;}
